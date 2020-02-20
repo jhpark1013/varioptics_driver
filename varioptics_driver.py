@@ -8,7 +8,7 @@ class Varioptics:
 
     @staticmethod
     def list_available_serial_numbers():
-        from serial.tools.list_pors import available_comports
+        from serial.tools.list_ports import available_comports
         available_comports = comports()
         serial_num_list = []
         for c in available_comports:
